@@ -11,14 +11,16 @@ To install the LocalCrypt library, use npm:
 npm install localcrypt
 ```
 
-## Usage
+## Usage (ES6)
 
 Here is an example of how to use the LocalCrypt library:
 
 ```javascript
-const LocalCrypt = require('localcrypt');
-const SecureStorage = require('localcrypt/SecureStorage');
+// Importing the LocalCrypt and SecureStorage classes
+import LocalCrypt from 'localcrypt/LocalCrypt';
+import SecureStorage from 'localcrypt/SecureStorage';
 
+// Initialize LocalCrypt with a secret key
 const secretKey = 'mySecretKey';
 const localCrypt = new LocalCrypt(secretKey);
 const secureStorage = new SecureStorage(localCrypt);
@@ -28,6 +30,7 @@ secureStorage.setItem('username', 'victor');
 
 // Getting an item from secure storage
 console.log(secureStorage.getItem('username')); // Outputs: victor
+
 ```
 
 ## API Documentation
@@ -89,7 +92,4 @@ Make sure you have `jest` installed as a development dependency to run the tests
 
 We welcome contributions to the LocalCrypt library. If you have any suggestions, bug reports, or improvements, please open an issue or submit a pull request on GitHub.
 
-## License
-
-This project is licensed under the MIT License.
 ```
