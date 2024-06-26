@@ -1,0 +1,30 @@
+{
+  "name": "localcrypt",
+  "version": "1.0.0",
+  "description": "A JavaScript library for secure client-side storage using AES encryption.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sammie4068/localcrypt.git"
+  },
+  "keywords": [
+    "encryption",
+    "AES",
+    "localStorage",
+    "client-side",
+    "security"
+  ],
+  "author": "Okoro Samuel",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^24.1.0"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0"
+  }
+}
