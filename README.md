@@ -16,14 +16,9 @@ npm install localcrypt
 Here is an example of how to use the LocalCrypt library:
 
 ```javascript
-// Importing the LocalCrypt and SecureStorage classes
-import LocalCrypt from 'localcrypt/LocalCrypt';
+// Importing SecureStorage classes
 import SecureStorage from 'localcrypt/SecureStorage';
-
-// Initialize LocalCrypt with a secret key
-const secretKey = 'mySecretKey';
-const localCrypt = new LocalCrypt(secretKey);
-const secureStorage = new SecureStorage(localCrypt);
+const secureStorage = new SecureStorage();
 
 // Setting an item in secure storage
 secureStorage.setItem('username', 'victor');

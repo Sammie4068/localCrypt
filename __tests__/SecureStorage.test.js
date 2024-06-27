@@ -1,10 +1,7 @@
-const LocalCrypt = require("../LocalCrypt");
 const SecureStorage = require("../secureStorage");
 
 test("set and get item in secure storage", () => {
-  const secretKey = "testKey";
-  const localCrypt = new LocalCrypt(secretKey);
-  const secureStorage = new SecureStorage(localCrypt);
+  const secureStorage = new SecureStorage();
 
   secureStorage.setItem("testKey", "testValue");
   const value = secureStorage.getItem("testKey");

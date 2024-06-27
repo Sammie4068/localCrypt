@@ -1,8 +1,8 @@
+require("dotenv").config(); // Ensure environment variables are loaded for tests
 const LocalCrypt = require("../LocalCrypt");
 
 test("encrypt and decrypt data", () => {
-  const secretKey = "testKey";
-  const localCrypt = new LocalCrypt(secretKey);
+  const localCrypt = new LocalCrypt();
 
   const data = "testData";
   const encryptedData = localCrypt.encrypt(data);
@@ -10,3 +10,4 @@ test("encrypt and decrypt data", () => {
 
   expect(decryptedData).toBe(data);
 });
+

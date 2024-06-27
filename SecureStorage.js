@@ -1,6 +1,8 @@
+const LocalCrypt = require("./LocalCrypt");
+
 class SecureStorage {
-  constructor(localCrypt) {
-    this.localCrypt = localCrypt;
+  constructor() {
+    this.localCrypt = new LocalCrypt();;
   }
 
   setItem(key, value) {
@@ -18,3 +20,4 @@ class SecureStorage {
 }
 
 module.exports = SecureStorage;
+
