@@ -1,11 +1,10 @@
 const CryptoJS = require("crypto-js");
-require("dotenv").config(); // Load environment variables from .env file
 
 class LocalCrypt {
   constructor() {
-    this.secretKey = process.env.SECRET_KEY;
+    this.secretKey = "jbyuuybububuybyytvytvtrcrdcrdcftfgvy67y7y9y97g7gtvfcfdxffcfvgh";
     if (!this.secretKey) {
-      throw new Error("Secret key is not defined in environment variables");
+      throw new Error("Secret key is not defined");
     }
   }
 

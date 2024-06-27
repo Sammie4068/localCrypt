@@ -1,7 +1,7 @@
 {
   "name": "localcrypt",
-  "version": "1.0.1",
-  "description": "A JavaScript library for secure client-side storage using AES encryption.",
+  "version": "1.0.2",
+  "description": "A JavaScript library for secure local storage using AES encryption.",
   "main": "index.js",
   "scripts": {
     "test": "jest"
