@@ -1,7 +1,7 @@
 
 # LocalCrypt
 
-LocalCrypt is a JavaScript library for secure client-side storage using AES encryption.
+LocalCrypt is a JavaScript library for secure local storage using AES encryption.
 
 ## Installation
 
@@ -16,6 +16,8 @@ npm install localcrypt
 Here is an example of how to use the LocalCrypt library:
 
 ```javascript
+"use client"
+
 // Importing SecureStorage classes
 import SecureStorage from 'localcrypt/SecureStorage';
 const secureStorage = new SecureStorage();

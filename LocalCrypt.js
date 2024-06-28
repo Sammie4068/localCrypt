@@ -1,11 +1,16 @@
 const CryptoJS = require("crypto-js");
+const crypto = require("crypto");
 
 class LocalCrypt {
   constructor() {
-    this.secretKey = "jbyuuybububuybyytvytvtrcrdcrdcftfgvy67y7y9y97g7gtvfcfdxffcfvgh";
+    this.secretKey = this.generateKey();
     if (!this.secretKey) {
       throw new Error("Secret key is not defined");
     }
+  }
+
+  generateKey() {
+    return crypto.randomBytes(32).toString("hex");
   }
 
   encrypt(data) {
